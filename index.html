@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebPlay Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom scrollbar for a more modern look */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1e293b; /* slate-800 */
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #475569; /* slate-600 */
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #64748b; /* slate-500 */
+      }
+      .dark ::-webkit-scrollbar-track {
+         background: #1e293b;
+      }
+      .light ::-webkit-scrollbar-track {
+        background: #e2e8f0; /* slate-200 */
+      }
+      .light ::-webkit-scrollbar-thumb {
+        background: #94a3b8; /* slate-400 */
+      }
+      .light ::-webkit-scrollbar-thumb:hover {
+        background: #64748b; /* slate-500 */
+      }
+
+      /* React-split styles */
+      .gutter {
+        background-color: #334155; /* slate-700 */
+        background-repeat: no-repeat;
+        background-position: 50%;
+      }
+      .gutter.gutter-horizontal {
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxl79uzZDCBioElMX4BiIQC8PAOKftUbcwAAAABJRU5ErkJggg==');
+        cursor: col-resize;
+      }
+      .gutter.gutter-vertical {
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAFAQMAAABo7865AAAABlBMVEVHcEzMzMzyAv2sAAAAAXRSTlMAQObYZgAAABBJREFUeF5jOAMEEAIEEFwAn3kMwcB6I2AAAAAASUVORK5CYII=');
+        cursor: row-resize;
+      }
+      .light .gutter {
+        background-color: #cbd5e1; /* slate-300 */
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.553.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@codemirror/lang-css": "https://aistudiocdn.com/@codemirror/lang-css@^6.3.1",
+    "@codemirror/lang-html": "https://aistudiocdn.com/@codemirror/lang-html@^6.4.11",
+    "@uiw/codemirror-theme-github": "https://aistudiocdn.com/@uiw/codemirror-theme-github@^4.25.3",
+    "@codemirror/lang-javascript": "https://aistudiocdn.com/@codemirror/lang-javascript@^6.2.4",
+    "@uiw/react-codemirror": "https://aistudiocdn.com/@uiw/react-codemirror@^4.25.3",
+    "react-split": "https://aistudiocdn.com/react-split@^2.0.14",
+    "@uiw/codemirror-theme-vscode": "https://aistudiocdn.com/@uiw/codemirror-theme-vscode@^4.25.3"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
